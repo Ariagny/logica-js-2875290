@@ -82,3 +82,4 @@ let total = valorporunidad * cantidad;
 alert("Fruta: " + frutaelegida + "\nValor por unidad: $" + parseFloat(valorporunidad) + "\nValor total: $" + parseFloat(total));
 */
 
+                                                                                                
