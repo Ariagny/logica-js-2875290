@@ -9,3 +9,4 @@ miBtn.addEventListener("click", function(){
     pantalla.innerText = "Ejecutando script 😁"; //cambia el texto dentro de las etiquetas
 
 })
+
