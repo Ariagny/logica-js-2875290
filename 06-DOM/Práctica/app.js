@@ -24,3 +24,25 @@ botonesColores[0].addEventListener("click",pintarCaja)
 botonesColores[1].addEventListener("click",pintarCaja)
 botonesColores[2].addEventListener("click",pintarCaja)
 botonesColores[3].addEventListener("click",pintarCaja)
+
+//ejercicio 3
+const pelota = document.querySelector("#circulo");
+const btnMover = document.querySelector("#btnMover");
+let e = 0;
+
+function mover (){
+    if(e == 0){
+    pelota.style.marginLeft = "400px";
+    pelota.style.backgroundColor = "red";
+    pelota.style.transitionDuration = ".5s";
+    e = 1;   
+    }else{
+    pelota.style.marginLeft = "0px";
+    pelota.style.backgroundColor = "#232323";
+    pelota.style.transitionDuration = ".5s";
+    e = 0;   
+    }
+    
+}
+
+btnMover.addEventListener("click",mover)
