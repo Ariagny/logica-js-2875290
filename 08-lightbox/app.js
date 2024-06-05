@@ -20,13 +20,22 @@ function cerrar (){
     flotante.style.transitionDuration = "0.5s";
 
 }
+let estado =  0;
 
-function cambiar (){
-
+function cambiarImagen(){
+        if (estado <= 0){
+        imgPrincipal.setAttribute("src", "img1.jpg") 
+        estado = 1; 
+        }else{
+        imgPrincipal.setAttribute("src", "img2.jpg")
+        estado = 0;
+        }   
 }
+
 
 btnNumeros[0].addEventListener("click",lightbox);
 btnNumeros[1].addEventListener("click",lightbox);
 equis.addEventListener("click",cerrar);
 cuadroOpacidad.addEventListener("click",cerrar);
-
+btnSiguiente.addEventListener("click",cambiarImagen);
+btnAnterior.addEventListener("click",cambiarImagen);
